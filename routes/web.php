@@ -15,4 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/booking', 'BookingController@getbooking');
+Route::get('/rent', 'BookingController@getrent');
+Route::get('/booking' ,'BookingController@getbooking');
+
+Route::get('check-connect',function(){
+ if(DB::connection()->getDatabaseName())
+ {
+ return "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
+ }else{
+ return 'Connection False !!';
+ }
+ 
+});

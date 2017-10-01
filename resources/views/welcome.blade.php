@@ -102,7 +102,7 @@
           <nav>
             <ul class="sf-menu">
              <li class="current"><a href="index.html">Home</a></li>
-             <li><a href="{{URL('/booking')}}">Booking</a></li>
+             <li><a href="{{URL('/rent')}}">Booking</a></li>
              <li><a href="index-2.html">Services</a></li>
              <li><a href="index-3.html">Blog</a></li>
              <li><a href="index-4.html">Contacts</a></li>

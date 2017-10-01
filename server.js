@@ -35,33 +35,21 @@ app.post('/createuser', function (req, res) {
 	  // connected!
 	  console.log('Insert Complete')
 	  //res.send(JSON.stringify(results))
-	  res.redirect('http://localhost:8080/booking.blade.php')
+	  res.redirect('http://localhost:8080/user.html')
 	}); 
 })
 
-app.post('/createuser1', function (req, res) {
+app.post('/bookingroom', function(req, res) {
 	console.log('income request')
 	console.log(req.body)
-	connection.query('INSERT INTO USERS (name,email,password) VALUES ("'+req.body.name+'","'+req.body.email+'","'+req.body.password+'")', function (error, results, fields) {
-	  if (error) throw error;
-	  // connected!
-	  console.log('Insert Complete')
-	  //res.send(JSON.stringify(results))
-	  res.redirect('http://localhost:8080/test.html')
-	}); 
+	connection.query('INSERT INTO CUSTOMERS (name,surname,address,email,tel) VALUES ("'+req.body.name+'","'+req.body.surname+'","'+req.body.address+'","'+req.body.email+'","'+req.body.tel+'")',
+		function (error, results, feilds){
+			if (error) throw error;
+			console.log('Insert Complete')
+			res.redirect('http://localhost:8080/booking.blade.php')
+		});
 })
 
-/*app.post('/createstaff', function (req, res) {
-	console.log('income request')
-	console.log(req.body)
-	connection.query('INSERT INTO STAFF (name,surname,gender,dob,address,tel) VALUES ("'+req.body.name+'","'+req.body.surname+'","'+req.body.gender+'","'+req.body.dob'","'+req.body.address'","'+req.body.tel'")', function (error, results, fields) {
-	  if (error) throw error;
-	  // connected!
-	  console.log('Insert Complete')
-	  //res.send(JSON.stringify(results))
-	  res.redirect('http://localhost:8080/staff.html')
-	}); 
-})*/
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
