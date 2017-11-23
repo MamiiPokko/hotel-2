@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/rent', 'BookingController@getrent');
 Route::get('/booking' ,'BookingController@getbooking');
+Route::get('/result/{id}', 'BookingController@getresult');
 
 Route::get('check-connect',function(){
  if(DB::connection()->getDatabaseName())

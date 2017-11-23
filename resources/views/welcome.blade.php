@@ -4,26 +4,26 @@
 <title>Home</title>
 <meta charset="utf-8">
 <meta name = "format-detection" content = "telephone=no" />
-<link rel="icon" href="images/favicon.ico">
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/camera.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/stuck.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery.js"></script>
-<script src="js/jquery-migrate-1.1.1.js"></script>
-<script src="js/script.js"></script> 
-<script src="js/superfish.js"></script>
-<script src="js/jquery.equalheights.js"></script>
-<script src="js/jquery.mobilemenu.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/tmStickUp.js"></script>
-<script src="js/jquery.ui.totop.js"></script>
-<script src="js/owl.carousel.js"></script>
+<link rel="icon" href="{{URL('images/favicon.ico')}}">
+<link rel="shortcut icon" href="{{URL('images/favicon.ico')}}" />
+<link rel="stylesheet" href="{{URL('css/camera.css')}}">
+<link rel="stylesheet" href="{{URL('css/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{URL('css/stuck.css')}}">
+<link rel="stylesheet" href="{{URL('css/style.css')}}">
+<script src="{{URL('js/jquery.js')}}"></script>
+<script src="{{URL('js/jquery-migrate-1.1.1.js')}}"></script>
+<script src="{{URL('js/script.js')}}"></script> 
+<script src="{{URL('js/superfish.js')}}"></script>
+<script src="{{URL('js/jquery.equalheights.js')}}"></script>
+<script src="{{URL('js/jquery.mobilemenu.js')}}"></script>
+<script src="{{URL('js/jquery.easing.1.3.js')}}"></script>
+<script src="{{URL('js/tmStickUp.js')}}"></script>
+<script src="{{URL('js/jquery.ui.totop.js')}}"></script>
+<script src="{{URL('js/owl.carousel.js')}}"></script>
 
-<script src="js/camera.js"></script>
+<script src="{{URL('js/camera.js')}}"></script>
 <!--[if (gt IE 9)|!(IE)]><!-->
-<script src="js/jquery.mobile.customized.min.js"></script>
+<script src="{{URL('js/jquery.mobile.customized.min.js')}}"></script>
 <!--<![endif]-->
 <script>
  $(document).ready(function(){
@@ -87,7 +87,7 @@
         <div class="clear"></div>
         <h1>
           <a href="index.html">
-            <img src="images/logo.png" alt="Logo alt">
+            <img src="{{URL('images/logo.png')}}" alt="Logo alt">
           </a>
         </h1>      
       <div class="clear"></div>  
@@ -117,9 +117,9 @@
 </header>        
 <div class="slider_wrapper ">
   <div id="camera_wrap" class="">
-    <div data-src="images/slide.jpg">
+    <div data-src="{{URL('images/h1.jpg')}}">
       <div class="caption fadeIn">
-        Passion in Creating new Spaces
+        JW Marriot Phuket Resort & Spa
       </div>
     </div>
     <div data-src="images/slide1.jpg">
