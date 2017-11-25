@@ -19,6 +19,8 @@ Route::get('/rent', 'BookingController@getrent');
 Route::get('/booking' ,'BookingController@getbooking');
 Route::get('/result/{id}', 'BookingController@getresult');
 
+Route::get('/pdf/{id}','PDFController@pdf');
+
 Route::get('check-connect',function(){
  if(DB::connection()->getDatabaseName())
  {

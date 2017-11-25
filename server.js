@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 });
 
 const request = require('request');
-const token = '603tLxyomxh8kEaFhF5WbMrkp7NZc4VF6VRT8iR3MiV';
+const token = 'XW9oBqT9ZanMawzmp8KVrj8AOU9kz1ivNjHERb4wp3S';
 
 app.use(cors())
 
